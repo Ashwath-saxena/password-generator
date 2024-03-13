@@ -56,27 +56,21 @@ document.querySelector("div.password button").addEventListener(
 		}); 
 	}); 
 	
-  // Get references to the user information input fields and the generated password field
   const firstNameInput = document.getElementById("firstName");
   const lastNameInput = document.getElementById("lastName");
   const usernameInput = document.getElementById("username");
   const passwordInput = document.querySelector('input[type="text"]');
 
-  // Add an event listener to the generated password field to check for a match when the value changes
   passwordInput.addEventListener("input", () => {
-    // Get the current values of the input fields
     const firstName = firstNameInput.value.toLowerCase();
     const lastName = lastNameInput.value.toLowerCase();
     const username = usernameInput.value.toLowerCase();
     const password = passwordInput.value.toLowerCase();
 
-    // Check if the password matches any of the user information fields
     if (password === firstName || password === lastName || password === username) {
-      // If there is a match, show an error message
       passwordInput.setCustomValidity("Password cannot match your first name, last name, or username.");
       passwordInput.reportValidity();
     } else {
-      // If there is no match, clear the error message
       passwordInput.setCustomValidity("");
     }
   });
