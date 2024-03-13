@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
+body {
+  background-color: #ffffff;
+  color: #000000;
+  font-family: "Roboto Mono", monospace;
+}
+
+.user-info {
+  text-align: center;
+  color: #000000;
+}
+
+.formmm {
+  background-color: #f5f5f5;
+  width: 500px;
+  margin: auto;
+  padding: 5px 20px;
+  border-radius: 10px;
+}
+
+.form-field {
+  margin: 10px;
+}
+
+.form-field label {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 1px;
+}
+
+.form-field input[type="text"] {
+  border: 0;
+  border-radius: 4px;
+  margin: 2px;
+  font-size: 15px;
+  padding: 10px;
+  width: 100%;
+  background-color: #ddd;
+  color: #333;
+}
+
+.generator {
+  background-color: #f5f5f5;
+  width: 500px;
+  margin: 15px auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+div.password {
+  display: grid;
+  grid-template-columns: auto min-content;
+  overflow: hidden;
+}
+
+div.password input {
+  padding: 10px 10px;
+  background-color: #ddd;
+  border: 0;
+  color: #333;
+}
+
+button {
+  background-color: #009dff;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 5px 15px;
+  border: 0;
+  border-radius: 10px;
+}
+
+div.password button {
+  border-radius: 0;
+}
+
+div.range {
+  margin: 10px 0;
+  display: grid;
+  grid-template-columns: 1fr min-content;
+}
+
+div.range span {
+  background-color: #ddd;
+  padding: 10px;
+  margin-left: 20px;
+  min-width: 30px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+div.options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+div.options label {
+  display: block;
+  background-color: #ddd;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: sans-serif;
+}
+
+button.generate {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+h1 {
+  padding-top: 1px;
+  text-align: center;
+  color: #009dff;
+}
